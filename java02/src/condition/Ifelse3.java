@@ -69,7 +69,7 @@ public static void main(String[] args) {
 	int Y2=Y&100;
 	int Y3=Y&400;
 	
-	if((Y1==0 && Y2!=0) || Y3==0 ) {
+	if(Y1==0 && (Y2!=0 || Y3==0) ) {
 		System.out.println("윤년입니다");
 	}
 	else {
