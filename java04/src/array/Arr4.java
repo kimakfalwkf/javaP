@@ -16,11 +16,11 @@ public static void main(String[] args) {
 		System.out.println(n[a]+"의 수도는 "+c[a]+"입니다");
 	}
 	
-	String str = "hi";
-	String str2 = "hi";
-	if (str == str2) {
-		System.out.println("같지!");
-	}
+//	String str = "hi";
+//	String str2 = "hi";
+//	if (str == str2) {
+//		System.out.println("같지!");
+//	}
 	
 	//사용자 입력으로 국가를 받아서 해당 국가의 수도를 알려주는 프로그램 만들기
 	
@@ -29,36 +29,31 @@ public static void main(String[] args) {
 	String s=sc.next();
 	int xx=-1;
 	
-//	int i = 0;
-//	if (s == c[0]) {
-//		i++;
-//
-//	} else if (s == c[1]) {
-//		i++;
-//	} else if (s == c[2]) {
-//		i++;
-//	} else if (s == c[3]) {
-//		i++;
-//	} else {
-//		System.out.println("일차하는 결과가 없습니다");
-//	}
 
-	//System.out.println(s+"의 수도는 "+c[i]+"입니다.");
-	
-	
 	for(int x=0;x<n.length;++x) {
-		if(sc.equals(n[x])) {
+		if(s.equals(n[x])) {
 			xx=x;
-			break;
+			//break;
 		}
+		
 	}
-	if(xx==-1) {
-		System.out.println("일치하는 결과가 없습니다");
+	if(xx>=0&&xx<=n.length) {
+		System.out.println(s+"의 수도는 "+c[xx]+"입니다.");
 	}
 	else {
-		System.out.println(n[xx]+"의 수도는 "+c[xx]+"입니다.");
-	}
 	
+	System.out.println(s+": 일치하는 국가가 없습니다.");}
+	
+
+	
+
+//	if(xx==-1) {
+//		System.out.println("일치하는 결과가 없습니다");
+//	}
+//	else {
+//		System.out.println(n[xx]+"의 수도는 "+c[xx]+"입니다.");
+//	}
+
 	
 }
 }

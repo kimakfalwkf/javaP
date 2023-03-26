@@ -8,12 +8,13 @@ public static void main(String[] args) {
 	
 	int s_arr[][]= {{10,20},{100,200}};
 	for(int i=0; i<s_arr.length;++i) {
-		for(int j=0; j<s_arr[i].length;++i) {
+		for(int j=0; j<s_arr[i].length;++j) {
 			System.out.println(s_arr[i][j]);
 		}
 	}
-	System.out.println(s_arr[0][1]); //20
+	System.out.println("2: "+s_arr[0][1]); //20
+	System.out.println("3: "+s_arr[1][0]); //20
 	
-	System.out.println(s_arr[1][0]); //200
+
 }
 }
