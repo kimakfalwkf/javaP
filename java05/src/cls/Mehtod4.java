@@ -8,11 +8,15 @@ public static void main(String[] args) {
 	System.out.println(mc7.빼기(4, 1));
 	System.out.println(mc7.곱하기(4, 2));
 	System.out.println(mc7.나누기(4, 0));
-	System.out.println(mc7.나머지구하기(10, 3));
+	System.out.println(mc7.나머지구하기(2, 11));
+	int a=2%11;
+	System.out.println(a);
 }
 }
 class my7{
+	
 	//더하기
+	
 	int 더하기(int num1,int num2) {
 		int re=num1+num2;
 				return re;
@@ -49,10 +53,8 @@ class my7{
 	
 	int 나머지구하기(int num1,int num2) {
 		int re5=0;
-		re5=num1-(num2*(num1*num2));
-		if (re5<0) {
-			re5*=-1;
-		}
+		re5=num1-(num2*(num1/num2));
+		
 		return re5;
 	}
 	
